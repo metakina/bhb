@@ -1,0 +1,58 @@
+@mixin borderCard(
+  $width: 261px,
+  $height: 335px,
+  $margin: 0px,
+  $radius: 20px,
+  $IMGwidth: 238px,
+  $IMGheight: 306px
+) {
+  margin: $margin auto 0;
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+  border-radius: $radius;
+  padding: 2px;
+  background-image: -webkit-linear-gradient(38deg, #302a2a, #7ef7fa, #050505);
+  .card-conr {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #594e4d 0%, #1b1818 100%);
+    box-sizing: border-box;
+    border-radius: 32rpx;
+    img {
+      width: $IMGwidth;
+      height: $IMGheight;
+      border-radius: $radius;
+    }
+  }
+}
+@mixin noborderCard(
+  $width: 261px,
+  $height: 335px,
+  $margin: 0px,
+  $radius: 20px,
+  $IMGwidth: 238px,
+  $IMGheight: 306px
+) {
+  margin: $margin auto 0;
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+  border-radius: $radius;
+  //   padding: 2px;
+  //   background-image: -webkit-linear-gradient(38deg, #302a2a, #7ef7fa, #050505);
+  .card-conr {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    // background: linear-gradient(135deg, #594e4d 0%, #1b1818 100%);
+    box-sizing: border-box;
+    border-radius: 32rpx;
+    img {
+      width: $IMGwidth;
+      height: $IMGheight;
+      border-radius: $radius;
+    }
+  }
+}
